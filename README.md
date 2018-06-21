@@ -135,12 +135,14 @@
 * Modify the `getArray` method signature by declaring it `abstract` of return type `E`.
 	* An abstract method is a subclass's contractual agreement to the deferment of an implementation of a respective method.
 * You may need to create an [inner class](https://docs.oracle.com/javase/tutorial/java/javaOO/innerclasses.html) to test make the People class
+
 -
 ### Part 10.2 - Modify `People` subclasses
 * Modify the `Students` class signature to ensure that it is a subclass of `People` of parameterized type `Student`.
 * Modify the `Instructors` class signature to ensure that it is a subclass of `People` of parameterized type `Instructor`.
 * See if you can modify the `getArray` method in the `People` class to return the generic array back. Otherwise, add concrete implementations of the `getArray` method in each of these classes
-  * HINT: To create a new generic array, you can use `E[] array = (E[]) Array.newInstance(Student[].class.getComponentType(), list.size());`. Note in this code, when I call newInstance, I give the Student[].class. Change it so it can be Student[] or Instructor[] or Person[].
+    * HINT: To create a new generic array, you can use `E[] array = (E[]) Array.newInstance(Student[].class.getComponentType(), list.size());`. Note in this code, when I call newInstance, I give the Student[].class. Change it so it can be Student[] or Instructor[] or Person[].
+
 -
 ### Part 10.3 - Refactor `ZipCodeWilmington` class
 * Refactor the `hostLecture` method in the `ZipCodeWilmington` class by removing any intermediate _casting trick(s)_.
