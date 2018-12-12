@@ -1,6 +1,6 @@
 # Leon's Lengthy Learner Lab 
 * **Purpose** - to demonstrate the use of [Java interfaces](http://tutorials.jenkov.com/java/interfaces.html#java-interface-example)
-* **Objective** - to implement a `ZipCodeWilmington` class which _mediates_ a _composite_ `Students` and `Instructors` _singleton_ reference.
+* **Objective** - to implement a `ZipCodeWilmington` class which _mediates_ a _composite_ `Students` and `io.zipcoder.interfaces.Interfaces.Instructors` _singleton_ reference.
 
 
 ### Part 1.1 - Create `Person` Class
@@ -120,9 +120,9 @@
 
 
 -
-### Part 8.0 - Create and Test `Instructors` singleton
+### Part 8.0 - Create and Test `io.zipcoder.interfaces.Interfaces.Instructors` singleton
 * Use `Part 7` as a reference.
-* Create a `Instructors` singleton which represents the set of instructors at ZipCodeWilmington.
+* Create a `io.zipcoder.interfaces.Interfaces.Instructors` singleton which represents the set of instructors at ZipCodeWilmington.
 * Create a `TestInstructors` class.
 
 
@@ -130,7 +130,7 @@
 ### Part 9.1 - Create `ZipCodeWilmington` Class
 * Create a `ZipCodeWilmington` singleton.
 	* The class should declare a field that references the instance of `Students` called `students`.
-	* The class should declare a field that references the instance of `Instructors` called `instructors`.
+	* The class should declare a field that references the instance of `io.zipcoder.interfaces.Interfaces.Instructors` called `instructors`.
 	* The class should define a method `hostLecture` which makes use of a `Teacher teacher, double numberOfHours` parameter to host a `lecture` to the composite `people` field in the `students` reference.
 	* The class should define a method `hostLecture` which makes use of a `long id, double numberOfHours` parameter to identify a respective `Instructor` to host a `lecture` to the composite `people` field in the `cohort` reference.
 
@@ -166,7 +166,7 @@
 -
 ### Part 10.2 - Modify `People` subclasses
 * Modify the `Students` class signature to ensure that it is a subclass of `People` of parameterized type `Student`.
-* Modify the `Instructors` class signature to ensure that it is a subclass of `People` of parameterized type `Instructor`.
+* Modify the `io.zipcoder.interfaces.Interfaces.Instructors` class signature to ensure that it is a subclass of `People` of parameterized type `Instructor`.
 * Provide concrete implementations of the `getArray` method in each of these classes.
 
 -
@@ -190,8 +190,8 @@
 ### Part 11.1 - Create `Educator` enum
 * Create an enum named `Educator`.
 	* The enum should implement `Teacher`.
-	* The enum should have an enumeration for each of the instructors represented in the `Instructors` class.
-	* Upon construction each enumeration of the enum should instantiate a respective `Instructor` and assign it to a final `instructor` field upon construction. The `instructor` should be added to the `Instructors` singleton.
+	* The enum should have an enumeration for each of the instructors represented in the `io.zipcoder.interfaces.Interfaces.Instructors` class.
+	* Upon construction each enumeration of the enum should instantiate a respective `Instructor` and assign it to a final `instructor` field upon construction. The `instructor` should be added to the `io.zipcoder.interfaces.Interfaces.Instructors` singleton.
 	* Calls to the `teach` and `lecture` method should be differed to the composite `instructor` reference.
 	* The enum should have a `double timeWorked` field which keeps track of the hours that the `Educator` has taught.
 
